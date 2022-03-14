@@ -64,9 +64,9 @@ hashcat -m 22100 -a 3 hash.txt "xyz?d?d?d?d?d"
 
 pri čemu `-m 22100` predstavlja hash mode za BitLocker, `xyz` predstavlja **HINT** kojeg ćete dobiti od profesora, a `?d?d?d?d?d` je niz od 5 brojeva koji hashcat mora pogoditi _bruteforce_ napadom.
 
+> **EDIT:**  
+> Korištenjem Google Cloud infrastrukture pokušajte ponoviti probijanje lozinke upotrebom [Cloudtopolis](https://github.com/JoelGMSec/Cloudtopolis) alata te usporedite vrijeme potrebno za doznavanje lozinke u odnosnu sa vrijeme na računalu.
+
 ## Podizanje slike kopije diska korištenjem [Arsenal Image Mounter](https://arsenalrecon.com/) alata
 
 Na računalo sačuvajte [Arsenal Image Mounter](https://www.softpedia.com/get/CD-DVD-Tools/Virtual-CD-DVD-Rom/Arsenal-Image-Mounter.shtml) s kojom ćemo podigniti sigurnosnu kopiju USB-a u _Read-only modu_. Kada stisnete tipku `Mount Image`, pronađite sigurnosnu kopiju diska, označite `Read only` te `Create "removable" disk device`. Nakon toga bi se trebao pokazati BitLocker prozor upozorenja za unos lozinke. Kada unesete lozinku trebao bi se pojaviti sadržaj USB memorije.
-
-> **EDIT:**  
-> Korištenjem Google Cloud infrastrukture pokušajte ponoviti probijanje lozinke upotrebom [Cloudtopolis](https://github.com/JoelGMSec/Cloudtopolis) alata te usporedite vrijeme potrebno za doznavanje lozinke u odnosnu sa vrijeme na računalu.
