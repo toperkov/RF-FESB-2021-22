@@ -67,7 +67,7 @@ if __name__ == "__main__":
 
     if any(path.endswith(ext) for ext in (".jpg", ".bmp", ".jpeg",)):
         figMetaData(path)
-    if path.endswith(".pdf"):
+    elif path.endswith(".pdf"):
         pdfMetaData(path)
     else:
         print("File extension not supported/recognized... Make sure the file has the correct extension...")
