@@ -34,7 +34,7 @@ cp /media/xx/yy/Windows/System32/config/SAM Registry_Files
 cp /media/xx/yy/Windows/System32/config/SECURITY Registry_Files
 cp /media/xx/yy/Windows/System32/config/SOFTWARE Registry_Files
 cp /media/xx/yy/Windows/System32/config/SYSTEM Registry_Files
-cp /media/xx/yy/Windows/Users/Kamryn/NTUSER.DAT Registry_Files
+cp /media/xx/yy/Users/Kamryn/NTUSER.DAT Registry_Files
 ```
 gdje je xx korisničko ime, dok je yy ID mountane slike.
 
