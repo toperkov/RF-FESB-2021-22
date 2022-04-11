@@ -7,6 +7,7 @@
 
 Pri pokretanju Kali VM-a primjetit ćete da se na računalu nalazi image diska ``Disk_Image_ID-202103.27.001``
 
+## Rad s diskom
 ### HASH
 Izračunajte MD5 i SHA1 hard diska
 ```
@@ -37,6 +38,7 @@ cp /media/xx/yy/Windows/Users/Kamryn/NTUSER.DAT Registry_Files
 ```
 gdje je xx korisničko ime, dok je yy ID mountane slike.
 
+## Analiza Registry-a, direktorija i dokumenata
 ### Regripper
 Regripper parsira registry files upotrebom pluginova. Pomoću njih se može saznati informacija koju je Regripper skupio. Pomoću naredbe ``rip.pl –l`` dobijete listu svih pluginova (preporuka napraviti output u textualnu datoteku ili koristiti ‘| more’ budući da je output prevelik).
 
