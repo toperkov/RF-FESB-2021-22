@@ -5,7 +5,7 @@
 - Instalirajte [Virtualbox](https://www.virtualbox.org/) i VM VirtualBox Extension Pack
 - Pokrenite Custom Kali VM = Kali (2020.4) kojeg će profesor pripremiti za vas
 
-Pri pokretanju Kali VM-a primjetit ćete da se na računalu nalazi image diska ``Disk_Image_ID-202103.27.001``
+Pri pokretanju Kali VM-a primjetit ćete da se na računalu nalazi image diska ``Disk_Image_ID_???.001``
 
 ## Rad s diskom
 ### HASH
@@ -25,7 +25,7 @@ fsstat daje file system information navedene particije.
 
 ### losetup
 Za mountanje slike diska koristimo losetup naredbu. Pri njenom pozivu se pokreće kao uređaj na računalu. 
-``sudo losetup --partscan --find --show --read-only <Disk_Image_ID-202103.27.001 path>``
+``sudo losetup --partscan --find --show --read-only <Disk_Image_ID_???.001 path>``
 
 ### Registry
 Kopirajte Registry files iz mountanog diska u vlastiti ‘Registry Files’ direktorij.
