@@ -15,19 +15,19 @@ sha1sum <disk image>
 ```
 
 ### fdisk
-fdisk is one of the tools you can use to display a partition table.
+fdisk je jedan od alata s kojim očitate partition tablicu.
 ``fdisk –l <disk image>``
 
 ### fsstat
-fsstat will give you the file system information of a partition.
+fsstat daje file system information navedene particije.
 ``fsstat –o <offset number> <disk image>``
 
 ### losetup
-To mount the disk image, use the losetup command. It mounts the disk image as a device on the system. 
-``sudo losetup --partscan --find --show --read-only ~/Disk_Image_ID-202103.27.001``
+Za mountanje slike diska koristimo losetup naredbu. Pri njenom pozivu se pokreće kao uređaj na računalu. 
+``sudo losetup --partscan --find --show --read-only <Disk_Image_ID-202103.27.001 path>``
 
 ### Registry
-Copy Registry files from the mounted disk image to your ‘Registry Files’ folder.
+Kopirajte Registry files iz mountanog diska u vlastiti ‘Registry Files’ direktorij.
 ```
 cp /media/xx/yy/Windows/System32/config/SAM Registry_Files
 cp /media/xx/yy/Windows/System32/config/SECURITY Registry_Files
@@ -35,7 +35,7 @@ cp /media/xx/yy/Windows/System32/config/SOFTWARE Registry_Files
 cp /media/xx/yy/Windows/System32/config/SYSTEM Registry_Files
 cp /media/xx/yy/Windows/Users/Kamryn/NTUSER.DAT Registry_Files
 ```
-where xx is username, while yy is image mounted ID.
+gdje je xx korisničko ime, dok je yy ID mountane slike.
 
 ### Regripper
 Regripper parsira registry files upotrebom pluginova. Pomoću njih se može saznati informacija koju je Regripper skupio. Pomoću naredbe ``rip.pl –l`` dobijete listu svih pluginova (preporuka napraviti output u textualnu datoteku ili koristiti ‘| more’ budući da je output prevelik).
