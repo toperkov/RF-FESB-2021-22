@@ -42,20 +42,20 @@ gdje je xx korisničko ime, dok je yy ID mountane slike.
 ### Regripper
 Regripper parsira registry files upotrebom pluginova. Pomoću njih se može saznati informacija koju je Regripper skupio. Pomoću naredbe ``rip.pl –l`` dobijete listu svih pluginova (preporuka napraviti output u textualnu datoteku ili koristiti ‘| more’ budući da je output prevelik).
 
-Korištenje: ``rip.pl –r <registry hive> -p <plugin>`` 
-Koja je system timezone: ``rip.pl -r SYSTEM -p timezone`` 
-Koji je operativni sustav instaliran na disku ``rip.pl -r SOFTWARE -p winver`` 
-Ime sustava: ``rip.pl -r SYSTEM -p compname`` 
-Koji su accounti na računalu: ``rip.pl -r SAM -p samparse | grep -E 'Username|Created|Date' --color=none`` 
-Koji se korisnik zadnji logirao i kada ``rip.pl -r SOFTWARE -p lastloggedon`` 
-Kada se računalo zadnji puta ugasilo: ``rip.pl -r SYSTEM -p shutdown`` 
-Što je korisnik zadnje otvorio ``rip.pl -r NTUSER.DAT -p recentdocs`` 
+Korištenje: ``rip.pl –r <registry hive> -p <plugin>``  
+Koja je system timezone: ``rip.pl -r SYSTEM -p timezone``  
+Koji je operativni sustav instaliran na disku ``rip.pl -r SOFTWARE -p winver``  
+Ime sustava: ``rip.pl -r SYSTEM -p compname``  
+Koji su accounti na računalu: ``rip.pl -r SAM -p samparse | grep -E 'Username|Created|Date' --color=none``  
+Koji se korisnik zadnji logirao i kada ``rip.pl -r SOFTWARE -p lastloggedon``  
+Kada se računalo zadnji puta ugasilo: ``rip.pl -r SYSTEM -p shutdown``  
+Što je korisnik zadnje otvorio ``rip.pl -r NTUSER.DAT -p recentdocs``  
 
 ### fls
 Lista file-ova i direktorija na danoj particiji: ``fls -o <offset number> <disk image> -r -l -p -z <timezone> >> file_dir.csv``
 
 ### Grep
-Traženje torrent aplikacija ``grep -F '.exe' file_dir.csv | grep -i 'torrent' | cut -f 1,2,4,5`` 
+Traženje torrent aplikacija ``grep -F '.exe' file_dir.csv | grep -i 'torrent' | cut -f 1,2,4,5``  
 Traženje mp3 datoteka ``grep -F '.mp3' file_dir.csv | grep -F 'torrent' | cut -f 1,2,4,5`` 
 
 ### Dodatak
